@@ -8,7 +8,7 @@ This Home Assistant add-on checks and updates Gandi DNS records with your extern
 - Checks and upodates your Gandi A Record every 5 minutes. 
 
 ## Installation
-1. Get your Gandi API key (from https://account.gandi.net/). Click your username, Account Settings and create a Personal Access Token. Be sure to note this as you can not retrieve it once you've left the creating screen!
+1. Get your Gandi API key (from https://account.gandi.net/). Click your username, Account Settings and create a Personal Access Token. Be sure to note this as you can not retrieve it once you've left the creating screen! Ensure that 'Manage domain name technical configurations' is enabled. I also recommend a 1 year expiration. 
 2. Install this add-on via the Home Assistant Add-on Store.
 3. Enter your API key, domain, and subdomain in the add-on configuration.
 4. If required, Enter the IP address, username and password of your MQTT broker in the add-on configuration.
