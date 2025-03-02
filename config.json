@@ -1,0 +1,37 @@
+{
+  "name": "Gandi Dynamic DNS",
+  "version": "1.0.1",
+  "slug": "gandi-dns",
+  "description": "Updates Gandi DNS A record and publishes status to MQTT",
+  "arch": ["amd64", "aarch64", "armv7"],
+  "startup": "application",
+  "boot": "auto",
+  "options": {
+    "api_token": "",
+    "domain": "",
+    "subdomain": "@",
+    "ttl": 300,
+    "mqtt_server": "127.0.0.1",
+    "mqtt_username": "",
+    "mqtt_password": ""
+  },
+  "schema": {
+    "api_token": "str",
+    "domain": "str",
+    "subdomain": "str",
+    "ttl": "int",
+    "mqtt_server": "str?",
+    "mqtt_username": "str?",
+    "mqtt_password": "str?"
+  },
+  "option_descriptions": {
+    "api_token": "Your Gandi API key.",
+    "domain": "The domain name to update (e.g., example.com).",
+    "subdomain": "The subdomain to update (e.g., 'www' or '@' for root domain).",
+    "ttl": "Time-to-Live for the DNS record (default: 300).",
+    "mqtt_server": "The address of your MQTT broker (default: mqtt://localhost).",
+    "mqtt_username": "Username for your MQTT broker (leave blank if not required).",
+    "mqtt_password": "Password for your MQTT broker (leave blank if not required)."
+  },
+  "init": false
+}
